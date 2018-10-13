@@ -1,0 +1,70 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav
+            #drawer
+            class="sidenav" [ngClass]="{'expand_menu': expand_menu}"
+            fixedInViewport="true"
+            [mode]="'side'"
+            [opened]="true"
+    >
+        <mat-toolbar>
+            <button
+                    type="button"
+                    aria-label="Toggle sidenav"
+                    mat-icon-button
+                    (click)="expand()"
+            >
+                <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+            </button>
+
+        </mat-toolbar>
+        <mat-nav-list>
+            <a mat-list-item routerLink="/intro">
+                <mat-icon aria-label="Side nav toggle icon">person</mat-icon>
+                <span *ngIf="expand_menu"> About </span>
+            </a>
+            <a mat-list-item routerLink="/articles">
+                <mat-icon aria-label="Side nav toggle icon">library_books</mat-icon>
+                <span *ngIf="expand_menu"> Articles </span>
+            </a>
+            <a mat-list-item routerLink="/works">
+                <mat-icon aria-label="Side nav toggle icon">hot_tub</mat-icon>
+                <span *ngIf="expand_menu"> Works </span>
+            </a>
+            <a mat-list-item routerLink="/contact">
+                <mat-icon aria-label="Side nav toggle icon">phone</mat-icon>
+                <span *ngIf="expand_menu"> Contacts </span>
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <!--<mat-toolbar color="primary">-->
+        <!--<button-->
+        <!--type="button"-->
+        <!--aria-label="Toggle sidenav"-->
+        <!--mat-icon-button-->
+        <!--(click)="drawer.toggle()"-->
+        <!--*ngIf="isHandset$ | async">-->
+        <!--<mat-icon aria-label="Side nav toggle icon">menu</mat-icon>-->
+        <!--</button>-->
+        <!--</mat-toolbar>-->
+        <!-- Add Content Here -->
+        <!--<app-intro></app-intro>-->
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+<!--<mat-drawer-container class="example-container" autosize>-->
+<!--<mat-drawer #drawer class="example-sidenav" mode="side">-->
+<!--<p>Auto-resizing sidenav</p>-->
+<!--<p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>-->
+<!--<button (click)="showFiller = !showFiller" mat-raised-button>-->
+<!--Toggle extra text-->
+<!--</button>-->
+<!--</mat-drawer>-->
+
+<!--<div class="example-sidenav-content">-->
+<!--<button type="button" mat-button (click)="drawer.toggle()">-->
+<!--Toggle sidenav-->
+<!--</button>-->
+<!--</div>-->
+
+<!--</mat-drawer-container>-->

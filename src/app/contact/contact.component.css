@@ -1,0 +1,28 @@
+.contact{
+    background-color: #5B8C5A;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+
+    color: #e8e8e8;
+    top: 0;
+    left: 65px;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+.second-button{
+    margin-right: 10px;
+}
+.content {
+    padding-top: 100px;
+    width: 90%;
+    max-width: 400px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+.margin-top{
+    margin-top: 20px;
+}

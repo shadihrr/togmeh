@@ -1,0 +1,25 @@
+.articles {
+    background-color: #889E92;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+
+    color: #22313f;
+    top: 0;
+    left: 65px;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.list-container{
+    width: 80%;
+}
+a {
+    color: #871a1a !important;
+    /*text-decoration: none !important;*/
+}
+h1{
+    color: #871a1a !important;
+    text-decoration: none !important;
+}

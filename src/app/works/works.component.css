@@ -1,0 +1,26 @@
+.works {
+    /*background-color: #5B8C5A;*/
+    background-color: #52414C;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+
+    color: #e8e8e8;
+    top: 0;
+    left: 65px;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.list-container{
+    width: 80%;
+}
+a {
+    color: #1c2a43 !important;
+    /*text-decoration: none !important;*/
+}
+h1{
+    color: #1c2a43 !important;
+    text-decoration: none !important;
+}
