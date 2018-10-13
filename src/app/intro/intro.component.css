@@ -63,13 +63,15 @@
 
 .title {
     color: white;
+    max-width: 80%;
 }
 
 .complete {
     color: white;
     margin-right: 50px;
     font-size: 1.5em;
-margin-bottom: 20px;
+    margin-bottom: 20px;
+    max-width: 80%;
 }
 
 .complete p {

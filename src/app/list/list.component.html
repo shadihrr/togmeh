@@ -1,5 +1,5 @@
 <div class="list-item" *ngFor="let item of items">
-    <a href="{{item.link}}"><h1>{{item.title}}</h1></a>
+    <a href="{{item.link}}"><h3>{{item.title}}</h3></a>
     <p>{{item.summary}}</p>
     <div class="tags">
         <button mat-stroked-button *ngFor="let tag of item.tags" color="warn" class="second-button margin-top">

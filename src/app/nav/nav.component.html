@@ -15,6 +15,14 @@
             >
                 <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
             </button>
+            <button *ngIf="expand_menu" style="position: absolute; right: 5px"
+                    type="button"
+                    aria-label="Toggle sidenav"
+                    mat-icon-button
+                    (click)="expand()"
+            >
+                <mat-icon aria-label="Side nav toggle icon">close</mat-icon>
+            </button>
 
         </mat-toolbar>
         <mat-nav-list>
